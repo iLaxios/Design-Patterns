@@ -79,3 +79,11 @@ Avoid Builder Pattern when:
 
 
 ![alt text](<Builder.jpg>)
+
+
+### Summary
+
++ When you want to create an object, but if the objects takes in too many configuration, then you would end up creating a big ugly ass constructor, too many overloaded constructors. 
++ Also you are forcing the client to send infor of all the parameters even if they are not intrested. 
++ Using builder design pattern, each of config would be a setter method which the client can invoke to taste. 
++ The builder will linearly build the object in chained fashsion and produces the product, you cant access the product class, its untouchable or immutable.
